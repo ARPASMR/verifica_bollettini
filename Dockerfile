@@ -4,5 +4,4 @@ FROM arpasmr/r-base
 RUN R -e "install.packages('shiny')"
 COPY *.R /usr/src/myapp/
 COPY launch.sh /usr/src/myapp/
-
-
+WORKDIR /usr/src/myapp/
